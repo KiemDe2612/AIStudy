@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">AIStudy</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Ask Tab & AI -->
+    <string name="ask_title">Ask AI Tutor</string>
+    <string name="ask_subtitle">Get step-by-step explanations powered by AI</string>
+    <string name="ask_hint">Type your question or homework problem here...</string>
+    <string name="ask_send">Ask Question</string>
+    <string name="ask_sending">Generating solution...</string>
+    <string name="ask_suggestions_header">Quick Suggestions</string>
+    <string name="ask_suggestion_1">Solve: 2x² - 5x + 2 = 0</string>
+    <string name="ask_suggestion_2">Explain photosynthesis step by step</string>
+    <string name="ask_suggestion_3">How does quicksort algorithm work?</string>
+    <string name="ask_suggestion_4">What caused World War I?</string>
+    <string name="ask_error_empty">Please enter a question first.</string>
+    <string name="ask_error_api_key">GEMINI_API_KEY is not configured in local.properties.</string>
+    <string name="ask_error_failed">Could not get AI response. Please try again.</string>
+
+    <!-- Answer Screen -->
+    <string name="answer_title">AI Solution</string>
+    <string name="answer_step_prefix">Step</string>
+    <string name="answer_final_header">Final Answer</string>
+    <string name="answer_back">Back to Ask</string>
+    <string name="answer_not_found">Question data not found.</string>
 </resources>

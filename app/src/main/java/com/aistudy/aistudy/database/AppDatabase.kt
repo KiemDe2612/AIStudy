@@ -1,4 +1,3 @@
-
 package com.aistudy.aistudy.database
 
 import android.content.Context
@@ -7,15 +6,24 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 @Database(
-    entities = [User::class],
-    version = 1,
+    entities = [
+        User::class,
+        Profile::class,
+        QuestionAnswer::class
+    ],
+    version = 3,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun userDao(): UserDao
 
+    abstract fun profileDao(): ProfileDao
+
+    abstract fun questionAnswerDao(): QuestionAnswerDao
+
     companion object {
+
         @Volatile
         private var instance: AppDatabase? = null
 
